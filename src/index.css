@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html, body, #root{
+		@apply w-screen h-screen max-h-screen max-w-[100vw] bg-none;
+	}
+}
+
+@layer components {
+  .headerButton{
+    @apply p-1 w-fit h-full text-black/75 hover:text-black transition-colors duration-500 dark:text-gray-200/75 dark:hover:text-gray-200
+  }
+  #sidebar-left, #sidebar-right{
+    min-width:3.5em
+  }
+  li p{
+    overflow-wrap: break-word;
+  }
+}
